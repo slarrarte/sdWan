@@ -1,0 +1,27 @@
+{
+  "vmanage": {
+    "ipAddr": "10.10.20.90",
+    "ports": {
+      "ssh": "22",
+      "https": "443"
+    },
+    "username": "admin",
+    "password": "C1sco12345"
+  },
+  "vsmart": {
+    "ipAddr": "10.10.20.70",
+    "ports": {
+      "ssh": "22"
+    },
+    "username": "admin",
+    "password": "C1sco12345"
+  },
+  "vbond": {
+    "ipAddr": "10.10.20.80",
+    "ports": {
+      "ssh": "22"
+    },
+    "username": "admin",
+    "password": "C1sco12345"
+  }
+}
