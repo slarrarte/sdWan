@@ -68,9 +68,9 @@ admin_endpoint = 'dataservice/admin/user'
 
 payload = {
     'group': ['netadmin'],
-    'description': 'Cheese',
-    'userName': 'slarrarte',
-    'password': 'Password123!'
+    'description': '',
+    'userName': '',
+    'password': ''
 }
 
 headers = {
@@ -87,9 +87,9 @@ print(res.text)
 #
 # payload2 = {
 #     'group': ['netadmin'],
-#     'description': 'Admin User',
-#     'userName': 'slarrarte',
-#     'password': '@@3efsda52442DFSA'
+#     'description': '',
+#     'userName': '',
+#     'password': ''
 # }
 #
 # res2 = sesh.put(url=f'{lab["host"]}{passwordEndpoint}', headers=headers, data=json.dumps(payload2), verify=False)
