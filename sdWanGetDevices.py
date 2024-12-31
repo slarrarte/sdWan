@@ -3,9 +3,9 @@ import json, sdWanAuthentication
 def sdWanGetDevices(base_url, jusername, jpassword):
     # Retrieve session via sdWanAuthentication.py
     with sdWanAuthentication.sdWanAuthentication(base_url, jusername, jpassword) as sesh:
-        devices_endpoint = '/dataservice/device'
+        device_endpoint = '/dataservice/device'
         device_response = sesh.get(
-            url='https://' + base_url + devices_endpoint,
+            url='https://' + base_url + device_endpoint,
             verify=False
         ).json()
 
