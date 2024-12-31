@@ -1,5 +1,6 @@
 # Cisco SD-WAN Authentication Script
 import requests
+from getpass import getpass
 
 def sdWanAuthentication(base_url, jusername, jpassword):
     # Authentication Info
@@ -14,6 +15,7 @@ def sdWanAuthentication(base_url, jusername, jpassword):
     sesh = requests.session()
     login_response = sesh.post(
         url='https://' + base_url + auth_endpoint,
+        headers={'Content-Type': 'application/x-www-form-urlencoded'},
         data=login_body,
         verify=False
     )
@@ -34,6 +36,7 @@ def sdWanAuthentication(base_url, jusername, jpassword):
     # Update token to session headers
     login_token = sesh.get(
         url='https://' + base_url + token_endpoint,
+        headers={'Content-Type': 'application/json'},
         verify=False
     )
 
